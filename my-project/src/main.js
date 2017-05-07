@@ -10,7 +10,7 @@ import vueResource from 'vue-resource'
 Vue.config.productionTip = false
 Vue.use(VueRouter)
 Vue.use(vueResource)
-
+require('vue-strap')
 
 // 3. Create the router instance and pass the `routes` option
 // You can pass in additional options here, but let's

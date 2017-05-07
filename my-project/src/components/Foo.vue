@@ -1,7 +1,7 @@
 <template>
 	<div class="foo">
 		<h3>This is the foo component</h3>
-		<ul  class="nav nav-pills">
+        <ul  class="nav nav-pills" style="height: auto height">
 			<li class="active">
 				<a  href="#1a" data-toggle="tab">Tab1</a>
 			</li>
@@ -10,10 +10,10 @@
 			</li>
 		</ul>
 		<div class="tab-content clearfix">
-			<div class="tab-pane active" id="1a" >
+			<div class="tab-pane active" id="1a" style="height: 100%;width: 100%;background-color: orange">
 				First
 			</div>
-			<div class="tab-pane" id="2a" >
+			<div class="tab-pane" style="height: 100%;width: 100%;background-color: red" id="2a" >
 				Second
 			</div>
 		</div>
@@ -29,3 +29,9 @@
 		}
 	}
 </script>
+<style scoped>
+	.foo{
+		background-color: #FFC733;
+		height:100%;
+	}
+</style>

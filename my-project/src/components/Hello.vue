@@ -1,5 +1,5 @@
 <template>
-  <div class="hello" style="width: 20%;height: 100%;background-color: cyan;float: left; ">
+  <div class="hello" style="width: 20%;height: 900px;background-color: cyan;float: left; ">
     <h1>{{ msg }}</h1>
   </div>
 </template>

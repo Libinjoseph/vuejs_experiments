@@ -1,14 +1,11 @@
 <template>
   <div id="app">
-    Main content
     <hello></hello>
-    <p>
-      <!-- use router-link component for navigation. -->
-      <!-- specify the link by passing the `to` prop. -->
-      <!-- <router-link> will be rendered as an `<a>` tag by default -->
-      <router-link to="/">Go to Foo</router-link>
-      <router-link to="/bar">Go to Bar</router-link>
-    </p>
+    <ul>
+      <li><router-link to="/" a class="active">Go to Foo</router-link></li>
+      <li><router-link to="/bar">Go to Bar</router-link></li>li>
+    </ul>
+    <h3>Main component</h3>
     <router-view></router-view>
     <!-- route outlet -->
   </div>
@@ -25,13 +22,34 @@
   }
 </script>
 
-<style>
+<style scoped>
   #app {
     font-family: 'Avenir', Helvetica, Arial, sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    text-align: center;
-    color: #2c3e50;
-    margin-top: 60px;
+    background-color: yellow;
   }
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: #111;
+}
 </style>
